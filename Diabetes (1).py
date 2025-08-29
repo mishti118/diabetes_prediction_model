@@ -26,10 +26,10 @@ if model_choice == "Logistic Regression":
     with open("logistic_regression.pkl", "rb") as f:
         model = pickle.load(f)
 elif model_choice == "Decision Tree":
-    with open("decision_tree.pkl", "rb") as f:
+    with open("Decision_Tree_Classifier (1).pkl", "rb") as f:
         model = pickle.load(f)
 else:
-    with open("random_forest.pkl", "rb") as f:
+    with open("Random_Forest_Classifier.pkl", "rb") as f:
         model = pickle.load(f)
 
 # Load Diabetes dataset (for feature ranges)
