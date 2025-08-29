@@ -33,7 +33,7 @@ else:
         model = pickle.load(f)
 
 # Load Diabetes dataset (for feature ranges)
-url = "F:\workstation\Github\ML-ProjectKart\Diabetes Prediction\Dataset\diabetes.csv"
+url = "https://raw.githubusercontent.com/plotly/datasets/master/diabetes.csv"
 df = pd.read_csv(url)
 
 st.sidebar.subheader("Set Feature Values")
