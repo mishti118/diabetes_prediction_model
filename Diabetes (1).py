@@ -26,11 +26,11 @@ if model_choice == "Logistic Regression":
     with open("logistic_regression.pkl", "rb") as f:
         model = pickle.load(f)
 elif model_choice == "Decision Tree":
-    with open("Decision_Tree_Classifier (1).pkl", "rb") as f:
-        model = pickle.load(f)
+    with open("Decision_Tree_Classifier (1).pkl", "rb") as fd:
+        model = pickle.load(fd)
 else:
-    with open("Random_Forest_Classifier.pkl", "rb") as f:
-        model = pickle.load(f)
+    with open("Random_Forest_Classifier.pkl", "rb") as fr:
+        model = pickle.load(fr)
 
 # Load Diabetes dataset (for feature ranges)
 url = "https://raw.githubusercontent.com/plotly/datasets/master/diabetes.csv"
